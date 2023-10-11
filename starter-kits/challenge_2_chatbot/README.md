@@ -1,25 +1,23 @@
-# Prova 2: scrittura di un breve racconto creativo che si svolge nel mondo immaginario e coi personaggi immaginari creati nella prova 1 (Durata: 1.5 ore)
+# Prova 3: Creazione di un Chatbot in grado di rispondere a domande sul testo creativo ottenuto nella prova 2 (Durata: 1.5 ore)
 
-# Obiettivo:
-    Acquisire familiarità con le API, di OpenAI o altri algoritmi, per la generazione di testo in modo molto semplice. Queste attività consentiranno ai partecipanti di sperimentare e comprendere come utilizzare la generazione di testo in contesti pratici. Una volta che avranno familiarità con questa capacità di base, potranno affrontare sfide più complesse e integrare la tecnologia in applicazioni più avanzate.
-    - Descrizione:
-        Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo script che generi frasi, idee o domande casuali utilizzando l'IA. Questa prova ha lo scopo di comprendere come inviare richieste alle API e ottenere una risposta semplice. I testi casuali così creati dovranno essere raccolti e utilizzati per costruire un breve racconto creativo che si svolge nel mondo immaginario e coi personaggi creati nella Challenge di "introduzione e onboarding". Il risultato può essere una storia breve o un articolo. Per creare questo risultato finale dovranno fare attenzione per utilizzare l’API al fine di ottenere testi utili allo scopo ed essere creativi e originali nello scrivere il racconto o l’articolo.
+    •	Obiettivo: Sviluppare un semplice chatbot in grado di rispondere a domande specifiche riguardanti il racconto o l’articolo generato nella Prova 2
+    •	Descrizione: Gli scritti creativi ottenuti con la prova 2 saranno distribuiti ai partecipanti, eventualmente utilizzeremo testi già pronti in caso di necessità. Dovranno creare un chatbot che possa rispondere in modo accurato alle domande poste dagli utenti basate sul testo ricevuto. Utilizzeranno le API OpenAI, o di altri, per generare risposte informative e coerenti.
 
 # Istruzioni:
-    1.	Per l'accesso alle API OpenAI tramite Azure, fare riferimento agli esempi di codice forniti nello starter-kit.
-    2.	Scrivere uno script che invii una richiesta API per generare un breve testo casuale, accettando in input degli argomenti correlati al mondo virtuale della prova 1
-    3.	Il testo generato potrebbe essere una breve affermazione, una domanda/risposta o un'idea casuale
-    4.	I partecipanti dovrebbero essere in grado di stampare e salvare il testo generato nello script
-    5.	Raccogliere queste frasi e costruire un piccolo racconto/articolo creativo di massimo una pagina, salvare il racconto/articolo
+    1.	Utilizzare il testo creativo generato nella prova 2 come input, su questo testo dovranno essere basate le risposte del chatbot.
+    2.	Sviluppare un interfaccia che accetti domande dagli utenti.
+    3.	Quando un utente inserisce una domanda, questa è inviata al chatbot tramite API OpenAI, il chatbot analizza il testo e genera una risposta basata sul contenuto del racconto/articolo dato in input.
+    4.	Il chatbot dev'essere preciso e coerente nel dare le risposte rispetto al contenuto dell'articolo.
 
-# Criteri di valutazione:
-    1.	Funzionalità: La soluzione dell'applicazione genera testo in modo efficace e risponde alle richieste degli utenti senza errori evidenti
-    2.	Qualità del Testo Generato: La qualità del testo generato è elevata. È ben strutturato, comprensibile e libero da errori grammaticali o semantici
-    3.	Facilità d'Uso: L'applicazione è intuitiva e facile da usare per gli utenti
-    4.	Tempo di Risposta: L'applicazione genera il testo in un tempo ragionevole. Le risposte sono rapide
-    5.	Architettura: Il codice è ben scritto, modulare, quanto è facile aggiungere funzionalità
-    6.	Originalità e Creatività: La soluzione proposta mostra originalità e creatività nell'uso delle API per generare testo
-    7.	Sicurezza e Conformità: L'applicazione rispetta le linee guida di sicurezza e conformità quando si lavora con le API. Per esempio protezione delle chiavi
+# Criteri di Valutazione:
+    1. Precisione delle risposte: Il chatbot dovrebbe essere in grado di fornire risposte accurate alle domande inerenti all'articolo. Possibilmente citando i punti salienti dell’articolo che hanno permesso di formulare la risposta
+    2. Coerenza: Le risposte dovrebbero essere costruite in modo coerente e leggibile.
+    3. Gestione delle domande: Il chatbot dovrebbe essere in grado di interpretare e gestire una varietà di domande poste dagli utenti.
+    4. Originalità e Creatività: La soluzione proposta mostra originalità e creatività
+    5. L'interfaccia utente aiuta a interagire con il chatbot in modo semplice e intuitivo
+
+    Questa prova consentirà ai partecipanti di applicare la tecnologia in un contesto più specifico e utile, creando un'applicazione pratica di un chatbot che può essere utilizzato per fornire informazioni dettagliate basate sul testo generato.
+
 
 # Esempio di chiamata alle API OpenAI:
 
