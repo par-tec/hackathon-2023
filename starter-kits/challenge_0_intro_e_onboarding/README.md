@@ -4,11 +4,12 @@ Descrizione:
 I partecipanti saranno invitati a formare dei gruppi, liberamente, e lavorare insieme per creare una presentazione di 6-8 slide che presenti un luogo immaginario dettagliato, compresi personaggi e ambienti. Potranno usare GPT-4 per generare descrizioni di testo per ciascuna slide e DALL-E per generare le immagini corrispondenti alle descrizioni.
 
 # Prerequisiti
-chat suggerita per la composizione di testo e immagini: bing/chat da qui è possibile utilizzare GPT-4 che include la creazione di immagini con DALL-E 3, NB:è necessario un account microsoft (free) per generare le immagini
-Alternative per generare immagini:
-    - bing/create,  è necessario avere un account microsoft (è free)
-    - dall-e2 (https://openai.com/dall-e-2), è sufficiente un qualsiasi account (p. es. gmail) 
-    - per altri strumenti (p. es. Midjourney) è necessario seguire le indicazioni del tool
+tool suggerito per la generazione di testo e immagini: 
+    - bing/chat da qui è possibile utilizzare GPT-4 che include la creazione di immagini con DALL-E 3, NB:è necessario un account microsoft (free) per generare le immagini
+    - bing/create, utilizza DALL-E 3, è necessario avere un account microsoft (free)
+Alternative per generare immagini:    
+    - dall-e-2 (https://openai.com/dall-e-2), è sufficiente un qualsiasi account (p. es. gmail)
+    - per altri strumenti (p. es. Midjourney/Discord) è necessario seguire le indicazioni dello specifico tool, sono principalmente tool a pagamento
 
 # Istruzioni:
 •	Formazione dei Gruppi: divide i partecipanti in gruppi di, ad esempio, 3-4 persone per promuovere il lavoro di squadra.
