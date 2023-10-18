@@ -1,14 +1,5 @@
-import logging
-import logging.config
-from pathlib import Path
 import os
 import openai
-from azure.core.credentials import AzureKeyCredential
-
-GPT_MODEL = "gpt-3.5-turbo"
-
-log = logging.getLogger(__name__)
-audit = logging.getLogger("audit")
 
 def chat_ai(prompt: str, chat_content: str = "You are an AI assistant that helps people find information.",  temp: float = 0.7, stop_word: str = None, my_engine: str = "GPT"):
     """
@@ -60,8 +51,7 @@ def chat_ai(prompt: str, chat_content: str = "You are an AI assistant that helps
     )
 
     
-    res = response["choices"][0]["message"]["content"]
-    log.info(f"Prompt: {prompt}; Response: {res}")
+    res = response["choices"][0]["message"]["content"]    
 
     return res
 
