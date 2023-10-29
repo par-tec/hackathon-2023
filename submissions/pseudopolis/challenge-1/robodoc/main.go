@@ -54,7 +54,8 @@ func authenticateRequest(req *http.Request) {
 
 	openAIKey := os.Getenv("OPENAI_KEY")
 	if openAIKey == "" {
-		log.Fatal("nessuna chiave OPENAI trovata")
+		openAIKey = string(keyByte)
+		log.Print("nessuna chiave OPENAI trovata")
 	}
 
 	req.Header.Set("Content-Type", "application/json")
@@ -68,6 +69,9 @@ const FILEMESSAGES string = "messages.json"
 //go:embed messages.json
 var messagesByte []byte
 
+//go:embed key.txt
+var keyByte []byte
+
 func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Minute)
 	defer cancel()
@@ -76,13 +80,6 @@ func main() {
 	var richiesta ChatMessage
 	richiesta.Role = "user"
 	richiesta.Content = strings.Join(os.Args[1:], " ")
-
-	/*
-		msgContent, err := os.ReadFile(FILEMESSAGES)
-		if err != nil {
-			log.Fatalf("impossibile leggere file %s: %s", FILEMESSAGES, err.Error())
-		}
-	*/
 
 	chat := Chat{
 		Model: "gpt-4",
