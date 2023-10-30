@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"robodoc/src/openai"
 	"strings"
 	"time"
 )
@@ -14,7 +15,7 @@ import (
 var profiloAssistenteVirtuale []byte
 
 func main() {
-	_, cancel := context.WithTimeout(context.Background(), 1*time.Minute)
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Minute)
 	defer cancel()
 
 	// Scelta/creazione assistente viruale.
@@ -27,7 +28,7 @@ func main() {
 	nuovaRichiesta := strings.Join(os.Args[1:], " ")
 
 	// Risposta dell'assistente viruale.
-	risposta := robodoc.Chiedi(nuovaRichiesta)
+	risposta := robodoc.Chiedi(ctx, nuovaRichiesta)
 
 	fmt.Println(risposta)
 }

@@ -8,23 +8,13 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"robodoc/src/internal/auth"
 )
 
 const openAIEndpoint = "https://api.openai.com/v1/chat/completions"
 
 type AssistantProfile []byte
 type AssistenteVirtuale Chat
-
-/*
-func NewAssistant(profileData []byte) []ChatMessage {
-	var msgReader = bytes.NewReader(profileData)
-	var messages []ChatMessage
-	if err := json.NewDecoder(msgReader).Decode(&messages); err != nil {
-		log.Fatalf("decodifica json dei messaggi in errore: %s", err.Error())
-	}
-	return messages
-}
-*/
 
 func NewRequest(s string) ChatMessage {
 	// Richiesta utente
@@ -57,11 +47,12 @@ func NuovoAssitenteVirtuale(assistantData []byte) (AssistenteVirtuale, error) {
 	return AssistenteVirtuale(c), nil
 }
 
-func (av AssistenteVirtuale) Chiedi(domanda string) string {
+// Chiedi esegue una richiesta di tipo chat all'assistente virtuale.
+func (av AssistenteVirtuale) Chiedi(ctx context.Context, domanda string) string {
 	req := NewRequest(domanda)
 	var assistente = av
 	assistente.Messages = append(assistente.Messages, req)
-	risposta, err := getResponse(context.Background(), Chat(assistente))
+	risposta, err := getResponse(ctx, Chat(assistente))
 	if err != nil {
 		log.Println(err)
 	}
