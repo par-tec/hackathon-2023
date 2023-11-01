@@ -85,3 +85,6 @@ podman run --rm me/robodoc <testo utente>
 
 ### Esempio di consulto medico con Robodoc
 [![asciicast](https://asciinema.org/a/3uo5aDrd8J6xuDzeFfYE20mqk.svg)](https://asciinema.org/a/3uo5aDrd8J6xuDzeFfYE20mqk)
+
+### Secondo consulto medico
+[![asciicast](https://asciinema.org/a/Lvt51GTKpPH5ElvSbsGjf61vZ.svg)](https://asciinema.org/a/Lvt51GTKpPH5ElvSbsGjf61vZ)
