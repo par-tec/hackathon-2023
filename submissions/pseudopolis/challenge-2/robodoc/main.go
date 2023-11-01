@@ -6,9 +6,10 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"robodoc/src/openai"
 	"strings"
 	"time"
+
+	"github.com/albertobregliano/hackathon-2023/submissions/pseudopolis/challenge-2/robodoc/src/openai"
 )
 
 //go:embed robodoc.json

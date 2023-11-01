@@ -8,7 +8,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"robodoc/src/internal/auth"
+
+	"github.com/albertobregliano/hackathon-2023/submissions/pseudopolis/challenge-2/robodoc/src/internal/auth"
 )
 
 const openAIEndpoint = "https://api.openai.com/v1/chat/completions"
