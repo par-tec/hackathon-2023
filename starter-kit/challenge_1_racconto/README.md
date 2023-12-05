@@ -6,7 +6,7 @@ Acquisire familiarità con le API, di OpenAI o altri algoritmi, per la generazio
 Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo script che generi frasi, idee o domande casuali utilizzando l'IA. Questa prova ha lo scopo di comprendere come inviare richieste alle API e ottenere una risposta semplice. I testi casuali così creati dovranno essere raccolti e utilizzati per costruire un breve racconto creativo che si svolge nel mondo immaginario e coi personaggi creati nella Challenge di "introduzione e onboarding". Il risultato può essere una storia breve o un articolo. Per creare questo risultato finale dovranno fare attenzione per utilizzare l’API al fine di ottenere testi utili allo scopo ed essere creativi e originali nello scrivere il racconto o l’articolo.
 
 ## Istruzioni:
-* Per l'accesso alle API OpenAI tramite Azure, fare riferimento agli esempi di codice alla fine di questo readme, un esempio quasi completo in python lo trovate in [../../submissions/aereopolis/challenge-1](../../submissions/aereopolis/challenge-0/hacka_challenge-1.py) 
+* Per l'accesso alle API OpenAI tramite Azure, fare riferimento agli esempi di codice alla fine di questo readme, un esempio quasi completo in python lo trovate in [../../submissions/aeropolis/challenge-1](../../submissions/aeropolis/challenge-1/hacka_challenge1.py) 
 * Scrivere uno script che invii una richiesta API per generare un breve testo casuale, accettando in input degli argomenti correlati al mondo virtuale della prova 1
 * *Il testo generato potrebbe essere una breve affermazione, una domanda/risposta o un'idea casuale
 * I partecipanti dovrebbero essere in grado di stampare e salvare il testo generato nello script
