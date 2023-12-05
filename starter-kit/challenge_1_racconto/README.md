@@ -28,7 +28,7 @@ Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo 
     import os
     import openai
     openai.api_type = "azure"
-    openai.api_base = "https://hackarome1.openai.azure.com/"
+    openai.api_base = "https://hacka1.openai.azure.com/"
     openai.api_version = "2023-07-01-preview"
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -45,7 +45,7 @@ Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo 
 
 ### CURL:
 ```bash
-    curl "https://hackarome1openai.openai.azure.com/openai/deployments/saGPT/chat/completions?api-version=2023-07-01-preview" \
+    curl "https://hacka1.openai.azure.com/openai/deployments/saGPT/chat/completions?api-version=2023-07-01-preview" \
     -H "Content-Type: application/json" \
     -H "api-key: YOUR_API_KEY" \
     -d "{
@@ -66,7 +66,7 @@ Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo 
     using Azure.AI.OpenAI;
 
     OpenAIClient client = new OpenAIClient(
-        new Uri("https://saopenai.openai.azure.com/"),
+        new Uri("https://hacka1.openai.azure.com/"),
         new AzureKeyCredential(Environment.GetEnvironmentVariable("AZURE_OPENAI_API_KEY")));
 
     // ### If streaming is selected
