@@ -33,7 +33,7 @@ Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo 
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
     response = openai.ChatCompletion.create(
-    engine="saGPT",
+    engine="parGPT",
     messages = [{"role":"system","content":"You are an AI assistant that helps people find information."},{"role":"user","content":"Ciao, se a Roma sono le 18:00 puoi dirmi che ore sono sulla Luna?"}],
     temperature=0.7,
     max_tokens=800,
@@ -45,7 +45,7 @@ Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo 
 
 ### CURL:
 ```bash
-    curl "https://hacka1.openai.azure.com/openai/deployments/saGPT/chat/completions?api-version=2023-07-01-preview" \
+    curl "https://hacka1.openai.azure.com/openai/deployments/parGPT/chat/completions?api-version=2023-07-01-preview" \
     -H "Content-Type: application/json" \
     -H "api-key: YOUR_API_KEY" \
     -d "{
@@ -71,7 +71,7 @@ Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo 
 
     // ### If streaming is selected
     Response<StreamingChatCompletions> response = await client.GetChatCompletionsStreamingAsync(
-        deploymentOrModelName: "saGPT",
+        deploymentOrModelName: "parGPT",
         new ChatCompletionsOptions()
         {
             Messages =
@@ -90,7 +90,7 @@ Utilizzare l'API di base per GPT-3.5 (Azure) o altri servizi. Creare un piccolo 
 
     // ### If streaming is not selected
     Response<ChatCompletions> responseWithoutStream = await client.GetChatCompletionsAsync(
-        "saGPT",
+        "parGPT",
         new ChatCompletionsOptions()
         {
             Messages =
