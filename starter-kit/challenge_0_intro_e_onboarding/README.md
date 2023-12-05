@@ -20,7 +20,7 @@ Per generare la descrizione di testo per ciasuna slide e le immagini corrisponde
 
 # Istruzioni:
  * Formazione dei Gruppi: i partecipanti dovranno dividersi in gruppi di, ad esempio, 3-4 persone per promuovere il lavoro di squadra, comunicare un email allo staff
- * Creazione di Slide: Ciascun gruppo deve creare una presentazione di 6-8 slide in formato open (odp). Ogni slide rappresenta un aspetto diverso del luogo immaginario, come l'ambiente, i personaggi, le attività, ecc. (vedi esempio in [../submissions/aeropolis/challenge-0/](../submissions/aeropolis/challenge-0/))
+ * Creazione di Slide: Ciascun gruppo deve creare una presentazione di 6-8 slide in formato open (odp). Ogni slide rappresenta un aspetto diverso del luogo immaginario, come l'ambiente, i personaggi, le attività, ecc. (vedi esempio in [../../submissions/aeropolis/challenge-0/](../../submissions/aeropolis/challenge-0/))
  * Descrizioni di Testo: Utilizza la generative-AI per generare descrizioni di testo dettagliate per ciascuna slide. Ad esempio, descrivi l'aspetto fisico dei personaggi, l'architettura degli edifici o di un locale specifico, l'atmosfera del luogo, ecc.
  * Generazione di Immagini: Utilizza la generative-AI per generare immagini che corrispondano alle descrizioni di testo per ciascuna slide. Ogni gruppo dovrebbe creare un'immagine per ogni slide. DALL-E-3 è accessibile gratuitamente tramite Bing/chat
  * Composizione delle Slide: Componi la presentazione utilizzando le immagini generate e le descrizioni di testo. Assicurati che ogni slide abbia una descrizione testuale e un'immagine. 
