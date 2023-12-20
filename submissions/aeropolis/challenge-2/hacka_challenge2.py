@@ -1,6 +1,8 @@
 import os
 import openai
 
+#Note: This code sample requires OpenAI Python library version 0.28.1 or lower
+
 def chat_ai(prompt: str, chat_content: str = "You are an AI assistant that helps people find information.",  temp: float = 0.7, stop_word: str = None, my_engine: str = "GPT"):
     """
     execute LLM interaction using a prompt and applying a role to the AI assistant.
@@ -11,24 +13,12 @@ def chat_ai(prompt: str, chat_content: str = "You are an AI assistant that helps
     """    
     # set openai configuration
     openai.api_type = "azure"
-    openai.api_base = "https://saopenai.openai.azure.com/"    
+    openai.api_base = "https://hacka1.openai.azure.com/"    
     openai.api_version = "2023-07-01-preview"
     openai.api_key = os.getenv("OPENAI_API_KEY")
-    eng = "saGPT"
+    eng = "parGPT"
     mod = None
     
-    if my_engine == "LLAMA":        
-        # LLAMA
-        openai.api_type = "open_ai"
-        openai.api_base = "http://51.159.159.233:3001/v1" 
-        openai.api_version = ""
-        eng = None
-        mod = "/models/llama-2-13b-chat.bin"
-    
-            
-    #set api key from environment variable
-    openai.api_key = os.getenv("OPENAI_API_KEY")   
-
     response = openai.ChatCompletion.create(
         engine = eng, 
         model  = mod,
